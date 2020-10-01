@@ -53,7 +53,7 @@
         #define SOUNDTOUCHDLL_API extern "C" __attribute__((__visibility__("default")))
     #else
         // GCC doesn't require DLL imports
-        #define SOUNDTOUCHDLL_API
+        #define SOUNDTOUCHDLL_API extern "C"
     #endif
 
     // Linux-replacements for Windows declarations:
