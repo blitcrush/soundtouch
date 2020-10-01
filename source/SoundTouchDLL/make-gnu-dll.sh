@@ -18,5 +18,5 @@ fi
 
 echo "Building SoundTouchDLL for $arch with flags:$flags"
 
-g++ -O3 -ffast-math -shared $flags -DDLL_EXPORTS -fvisibility=hidden -I../../include \
-    -I../SoundTouch -o SoundTouchDll.so SoundTouchDLL.cpp ../SoundTouch/*.cpp
+g++ -O3 -ffast-math -dynamiclib $flags -DDLL_EXPORTS -fvisibility=hidden -I../../include \
+    -I../SoundTouch -o SoundTouchDll.dylib SoundTouchDLL.cpp ../SoundTouch/*.cpp

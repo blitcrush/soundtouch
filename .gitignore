@@ -1,3 +1,6 @@
+*.dylib
+*.DS_Store
+
 bin
 lib
 Developer Command Line
